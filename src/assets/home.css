@@ -1,0 +1,129 @@
+.hero {
+  margin-top: 35px;
+  position: relative; 
+  isolation: isolate; 
+  padding: 18px 18px 24px;
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  background:
+    radial-gradient(80% 120% at 0% 0%, rgba(26, 188, 156, .08), transparent 55%),
+    radial-gradient(60% 80% at 100% 0%, rgba(46, 204, 113, .06), transparent 60%),
+    var(--card);
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding-left: 8px;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  opacity: .75;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page-title {
+  margin: 2px 0 10px;
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: .2px;
+}
+
+.hero__lede {
+  max-width: 72ch;
+  font-size: 1.05rem;
+}
+
+.hero__cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 12px; /* distacco dal bordo inferiore */
+}
+
+.accent-2 { color: var(--accent-2); }
+
+/* ----- CV box ----- */
+.cv { position: relative; z-index: 1; }
+.cv__header {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+  letter-spacing: .3px;
+}
+
+/* Accordion look & feel coerente col tema */
+.cv__accordion .accordion-item {
+  background: transparent;
+  border: 1px solid var(--stroke);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.cv__accordion .accordion-button {
+  background: #0f1916; /* coerente col tema */
+  color: var(--text);
+  box-shadow: none;
+  padding: 12px 14px;
+}
+
+.cv__accordion .accordion-button:not(.collapsed) {
+  color: var(--accent);
+  background: linear-gradient(90deg, rgba(46, 204, 113, .12), transparent 60%);
+}
+
+.cv__accordion .accordion-button::after {
+  filter: invert(1) opacity(.8);
+}
+
+.cv__accordion .accordion-body {
+  color: var(--text); /* FIX: era "var (--text)" */
+  background: #0f1916;
+  border-top: 1px solid var(--stroke);
+  padding: 12px 14px 14px;
+}
+
+/* Liste principali */
+.cv__list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.cv__list > li {
+  margin: 8px 0;
+}
+
+/* Sottoliste per dettagli (Diploma, Laurea, Esami, ecc.) */
+.cv__sublist {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.cv__sublist li {
+  margin: 3px 0;
+}
+
+/* Tag delle competenze */
+.cv__tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #0c111c;
+  border: 1px solid #202636;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--accent-2);
+}
