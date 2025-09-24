@@ -24,18 +24,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#progetti" class="nav-link">Progetti</a>
-            </li>
-            <li class="nav-item">
-              <a href="#linguaggi" class="nav-link">Linguaggi</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contatti" class="nav-link">Contatti</a>
-            </li>
+      <!-- Menu -->
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <RouterLink to="/" class="nav-link" @click="closeNav">Home</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/projects" class="nav-link" @click="closeNav">Progetti</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/skills" class="nav-link" @click="closeNav">Linguaggi</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/contact" class="nav-link" @click="closeNav">Contatti</RouterLink>
+          </li>
           </ul>
         </div>
       </div>
