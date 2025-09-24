@@ -8,7 +8,7 @@
               fill="currentColor" class="me-2" viewBox="0 0 16 16">
             <path d="M8 .5l6.5 6.5V15a1 1 0 0 1-1 1h-4v-4H7v4H3a1 1 0 0 1-1-1V7L8 .5z"/>
           </svg>
-          Home
+          Alec's Home
         </a>
 
         <!-- Toggler -->
