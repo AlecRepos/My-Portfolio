@@ -7,8 +7,9 @@
         <h1 class="page-title">
           Ciao, sono <span class="accent-2">Alessandro</span>.
         </h1>
+        <h2 class="page-subtitle"><span class="accent-2">Benvenuto </span>nel mio portfolio!</h2>
 
-        <!-- Card con intro + CTA + blocco "Chi sono" a comparsa -->
+        <!-- Card con intro + blocco Micro-curriculum -->
         <div class="hero">
           <p class="hero__lede muted">
             Laureato in Informatica. Mi piace costruire prodotti semplici, puliti e affidabili.
@@ -16,27 +17,12 @@
             i linguaggi che conosco e come contattarmi.
           </p>
 
-          <div class="hero__cta">
-            <!-- Toggle del blocco "Chi sono" (collapse) -->
-            <button
-              class="btn link"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#cvCollapse"
-              aria-expanded="false"
-              aria-controls="cvCollapse"
-            >
-              Chi sono
-            </button>
-
-            <RouterLink class="btn" to="/projects">Vedi progetti</RouterLink>
-          </div>
-
-          <!-- Blocco collassabile che contiene l'accordion -->
-          <div id="cvCollapse" class="collapse cv mt-3">
+          <!-- Curriculum sempre visibile -->
+          <div id="cvCollapse" class="cv mt-3">
             <div class="cv__header">Micro-curriculum</div>
 
             <div class="accordion accordion-flush cv__accordion" id="cvAccordion">
+              
               <!-- Formazione -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -59,37 +45,36 @@
                 >
                   <div class="accordion-body">
                     <ul class="cv__list">
-                        <li>
+                      <li>
                         <strong>Diploma di Istruzione Superiore</strong>
                         <ul class="cv__sublist">
-                            <li>Presso: Istituto Tecnico Economico R. Serra, Cesena</li>
-                            <li>Corso: Sistemi Informativi Aziendali</li>
-                            <li>Voto: 75/100</li>
+                          <li>Presso: Istituto Tecnico Economico R. Serra, Cesena</li>
+                          <li>Corso: Sistemi Informativi Aziendali</li>
+                          <li>Voto: 75/100</li>
                         </ul>
-                        </li>
-                        <li>
-                        <strong>Laurea Triennale in Informatica </strong>
+                      </li>
+                      <li>
+                        <strong>Laurea Triennale in Informatica</strong>
                         <ul class="cv__sublist">
-                            <li>Presso: Università di Bologna – Campus di Cesena</li>
-                            <li>Corso di Laurea: Tecnologie dei Sistemi Informatici</li>
-                            <li>Voto: VVV/110L</li>
+                          <li>Presso: Università di Bologna – Campus di Cesena</li>
+                          <li>Corso di Laurea: Tecnologie dei Sistemi Informatici</li>
+                          <li>Voto: VVV/110L</li>
                         </ul>
-                        </li>
-                        <li>
+                      </li>
+                      <li>
                         <strong>Esami / Aree principali</strong>
                         <ul class="cv__sublist">
-                            <li>Sicurezza Informatica e Crittografia (4.0 GPA - 29/30L)</li>
-                            <li>Ingegneria e Sviluppo Web (4.0 GPA - 27/30L)</li>
-                            <li>Programmazione in C (4.0 GPA - 29/30L)</li>
-                            <li>Basi di Dati</li>
-                            <li>Reti</li>
-                            <li>Ingegneria del Software</li>
-                            <li>Algoritmi</li>
+                          <li>Sicurezza Informatica e Crittografia (4.0 GPA - 29/30L)</li>
+                          <li>Ingegneria e Sviluppo Web (4.0 GPA - 27/30L)</li>
+                          <li>Programmazione in C (4.0 GPA - 29/30L)</li>
+                          <li>Basi di Dati</li>
+                          <li>Reti</li>
+                          <li>Ingegneria del Software</li>
+                          <li>Algoritmi</li>
                         </ul>
-                        </li>
-
+                      </li>
                     </ul>
-                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -115,32 +100,41 @@
                 >
                   <div class="accordion-body">
                     <ul class="cv__list">
-                      <li>Internship</li>
+                      <li><strong>Internship</strong></li>
                       <ul class="cv__sublist">
                         <li>Presso: Cyberloop S.R.L., Cesena FC</li>
                         <li>Durata: 7 mesi (18/03/2025 - 13/10/2025)</li>
                         <li>Argomenti trattati:</li>
-                            <ul class="cv__sublist2">
-                                <li>Blue Teaming: Provisioning automatico di ambienti AD on-premise e messa in sicurezza tramite hardening</li>
-                                <span class="tag">Ansible</span>
-                                <span class="tag">Vagrant</span>
-                                <span class="tag">BadBlood</span>
-                                <span class="tag">Windows Defender</span>
-                                <span class="tag">PowerShell</span>
-                                <span class="tag">SSH</span>
-                                <span class="tag">Linux</span>
-                                <span class="tag">Ubuntu</span>
-                                <li>Red Teaming: Automazione del Deploy e Integrazione di Strumenti di Sicurezza in Infrastrutture di Red Teaming</li>
-                                <span class="tag">PwnDoc</span>
-                                <span class="tag">PCF</span>
-                                <span class="tag">MageAI</span>
-                                <span class="tag">OpenVAS</span>
-                                <span class="tag">Docker | Docker Compose</span>
-                                <span class="tag">PowerShell</span>
-                                <span class="tag">SSH</span>
-                                <span class="tag">Linux</span>
-                                <span class="tag">Ubuntu</span>
-                            </ul>
+                        <ul class="cv__sublist2">
+                          <li>
+                            Blue Teaming: Provisioning automatico di ambienti AD on-premise e messa in sicurezza tramite hardening
+                            <div class="cv__tags">
+                              <span class="tag">Ansible</span>
+                              <span class="tag">Vagrant</span>
+                              <span class="tag">BadBlood</span>
+                              <span class="tag">Windows Defender</span>
+                              <span class="tag">PowerShell</span>
+                              <span class="tag">SSH</span>
+                              <span class="tag">Linux</span>
+                              <span class="tag">Ubuntu</span>
+                            </div>
+                          </li>
+                          <li>
+                            Red Teaming: Automazione del Deploy e Integrazione di Strumenti di Sicurezza in Infrastrutture di Red Teaming
+                            <div class="cv__tags">
+                              <span class="tag">PwnDoc</span>
+                              <span class="tag">PCF</span>
+                              <span class="tag">MageAI</span>
+                              <span class="tag">OpenVAS</span>
+                              <span class="tag">Docker</span>
+                              <span class="tag">Docker Compose</span>
+                              <span class="tag">PowerShell</span>
+                              <span class="tag">SSH</span>
+                              <span class="tag">Linux</span>
+                              <span class="tag">Ubuntu</span>
+                            </div>
+                          </li>
+                        </ul>
                       </ul>
                     </ul>
                   </div>
@@ -148,7 +142,7 @@
               </div>
 
             </div> <!-- /accordion -->
-          </div> <!-- /collapse -->
+          </div> <!-- /cv -->
         </div> <!-- /hero -->
 
       </div>

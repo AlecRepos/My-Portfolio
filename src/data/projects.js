@@ -111,7 +111,7 @@ links: [
 {
 slug: 'Ansible Deploy',
 title: 'Ansible Deploy - PenTest, PwnDoc, ',
-excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
+excerpt: 'Deploy automatizzato di PenTest, PwnDoc e MageAI con Ansible su WSL',
 cover: '/public/Screening.png',
 tags: ['Ansible', 'PowerShell', 'WSL', 'PenTest', 'PwnDoc', 'MageAI'],
 body: `\
@@ -124,7 +124,7 @@ links: [
 {
 slug: 'OpenVAS',
 title: 'OpenVas',
-excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
+excerpt: 'Deploy automatizzato di OpenVAS con divisione Agent e Central & extra',
 cover: '/public/OpenVAS.png',
 tags: ['Ansible', 'PowerShell', 'WSL', 'OpenVAS'],
 body: `\

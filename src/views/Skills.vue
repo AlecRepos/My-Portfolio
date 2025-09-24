@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <h2>Competenze</h2>
-    <p class="muted">Le principali skill che utilizzo in studio e nei progetti personali.</p>
+    <p class="muted">I principali linguaggi che utilizzo, o ho utilizzato in studio e nei progetti personali.</p>
 
     <div class="grid skills-grid" style="margin-top:12px">
       <!-- Cybersecurity -->
@@ -40,6 +40,7 @@
           <span class="badge">HTML</span>
           <span class="badge">CSS</span>
           <span class="badge">JavaScript</span>
+          <span class="badge">TypeScript</span>
           <span class="badge">Vue.js</span>
           <span class="badge">Bootstrap</span>
           <span class="badge">Node.js</span>
