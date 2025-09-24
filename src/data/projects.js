@@ -3,7 +3,7 @@ export const projects = [
 slug: 'pacman-2-0',
 title: 'PacMan 2.0',
 excerpt: 'Realizzazione applicativo PacMan con Java e Gradle + Strategy Pattern',
-cover: '/public/CardCover/PacMan2.0.png',
+cover: '/CardCover/PacMan2.0.png',
 tags: ['Java', 'JavaFX', 'Gradle', 'Strategy pattern'],
 body: `\
 Il progetto consiste nella realizzazione di un applicativo che permetta agli utenti di rivivere l’emozione del classico Pac‑Man, 
