@@ -16,7 +16,7 @@ temporaneamente la modalità “scared” che consente di mangiare i fantasmi pe
 tutti i puntini, il livello avanza e, di tanto in tanto, compare una frutta bonus che conferisce ulteriori punti e 
 occasionali poteri speciali come velocità aumentata o congelamento dei fantasmi.`,
 links: [
-{ label: 'Repository', url: 'https://github.com/AlecUnibo/PacMan2.0_Game-JavaFX-Gradle-with-sounds-sprites' }
+{ label: 'Repository', url: 'https://github.com/AlecRepos/PacMan2.0_Game-JavaFX-Gradle-with-sounds-sprites' }
 ]
 },
 {
@@ -36,67 +36,102 @@ Per rispondere a questa esigenza nasce FindMatch, un’applicazione web che perm
 Lo scopo principale dell’applicazione è quello di facilitare l’incontro tra persone con la stessa passione sportiva, incentivando la pratica regolare di attività fisica, riducendo le difficoltà logistiche e favorendo nuove occasioni di socializzazione. In questo modo, FindMatch diventa non solo uno strumento per mantenersi allenati, ma anche un mezzo per creare connessioni e vivere lo sport come esperienza condivisa e accessibile a tutti.
 `,
 links: [
-{ label: 'Repository', url: 'https://github.com/AlecUnibo/Findmatch-Project' }
+{ label: 'Repository', url: 'https://github.com/AlecRepos/Findmatch-Project' }
 ]
 },
 {
 slug: 'Cash Control',
 title: 'CashControl.it',
-excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
+excerpt: 'App per organizzare il proprio patrimonio - spese, entrate e risparmi. Attualmente in sviluppo',
 cover: '/public/CashControl.png',
-tags: ['Vue', 'Node.js', 'PostgreSQL'],
+
 body: `\
-Ricerca, iscrizione partite, profili, chat, e documentazione API.`,
-links: []
+Ho deciso di iniziare a sviluppare questa applicazione, in primis, per una necessità personale. Mi sono ritrovato ad avere troppi fogli excel e note sparse in cui mi segnavo le spese e le uscite, un foglio excel in cui facevo il saldo, un foglio excel in cui controllavo i risparmi. Inoltre, non è ancora presente un'applicazione che possa gestire, in sicurezza, tutto questo.
+
+Feature principali:
+- Poter segnarsi le proprie uscite
+- Poter segnarsi le proprie entrate
+- Poter segnarsi i propri risparmi divisi in un macroaree personalizzabili
+- Poter segnarsi i propri investimenti. Con API che tiene traccia delle oscillazioni del mercato
+
+L'applicazione sarà molto semplice da usare e totalmente personalizzabile. L'idea è proprio quella di renderla adatta a chiunque, sia al signore che deve andare in pensione, ma anche al ragazzino che sta iniziando a mettere i primi soldini da parte e ancora, ovviamente non pensa a investirli. 
+`,
+links: [
+{ label: 'Repository', url: 'https://github.com/AlecRepos/CashControl.it' }
+]
 },
 {
 slug: 'Data Analysis',
 title: 'Data Analysis with ipynb & numpy',
 excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
 cover: '/public/Data Analysis.png',
-tags: ['Vue', 'Node.js', 'PostgreSQL'],
+tags: ['Python', 'Pandas', 'numpy', 'matplotlib', 'seaborn'],
 body: `\
-Ricerca, iscrizione partite, profili, chat, e documentazione API.`,
-links: []
+Contenuto del progetto
+- Dataset: jobs_dataset.csv, con dati su lavori nel settore Data Science dal 2020 al 2023.
+- Variabili principali: anno (work_year), titolo di lavoro (job_title), categoria (job_category), valuta e stipendio (salary, salary_currency, salary_in_usd), residenza, livello di esperienza, tipo di impiego, modalità di lavoro, località dell’azienda e dimensione aziendale.
+
+Analisi:
+- Caricamento e pulizia del dataset.
+- Calcolo di medie salariali in base a categorie e località.
+- Esplorazione della categoria Data Engineering.
+- Visualizzazioni con grafici (istogrammi e heatmap tramite Matplotlib/Seaborn).
+`,
+links: [
+{ label: 'Repository', url: 'https://github.com/AlecRepos/Data-Analysis-ipynb-numpy' }
+]
 },
 {
 slug: 'MultiClass Classification',
 title: 'MultiClass Classification with ResNet50 & EfficientNet',
-excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
+excerpt: 'Classificazione multiclasse allenando modelli di intelligenza artificiale',
 cover: '/public/Multi Class.png',
-tags: ['Vue', 'Node.js', 'PostgreSQL'],
+tags: ['ResNet50', 'EfficientNet'],
 body: `\
-Ricerca, iscrizione partite, profili, chat, e documentazione API.`,
-links: []
+Il progetto è lo sviluppo di un’architettura di rete neurale volta a risolvere un problema di classificazione multi-classe. Ho utilizzato modelli pre-addestrati (ResNet50 e EfficientNet) e tecniche di preprocessing per migliorare le performance. Clicca "Report" per scaricare il PDF di spiegazione`,
+links: [
+  { label: 'Repository', url: 'https://github.com/AlecRepos/Multi-Class_Classification_ResNet50-EfficientNet' },
+  { label: 'PDF', url: '/public/docs/Project_Report_Multiclass.pdf', download: true }
+]
+
 },
 {
 slug: 'Automated Laboratory',
 title: 'Automated Laboratory with Ansible & Vagrant + GPO',
-excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
+excerpt: 'Laboratorio automatizzato per creare e configurare VM Windows e Ubuntu Linux',
 cover: '/public/Automated Laboratory.png',
-tags: ['Vue', 'Node.js', 'PostgreSQL'],
+tags: ['Vagrant', 'Ansible', 'BadBlood', 'GPO', 'Windows Defender', 'WSL', 'SSH'],
 body: `\
-Ricerca, iscrizione partite, profili, chat, e documentazione API.`,
-links: []
+Laboratorio automatizzato per creare e configurare VM Windows e Ubuntu Linux. L'obiettivo era rendere veloci e automatici processi che si svolgevano per fare dei test all'interno dell'azienda. Con questo laboratorio si crea un SetUp completo e funzionante. Sono compresi anche script per scaricare i pacchetti necessari`,
+links: [
+  { label: 'Repository', url: 'https://github.com/AlecRepos/Automation-Vagrant-and-Ansible-Lab-and-GPO' },
+  { label: 'PDF', url: '/public/docs/Project_Report_Ansible.pdf', download: true }
+]
 },
 {
 slug: 'Ansible Deploy',
-title: 'Ansible Deploy - PenTest, PwnDoc, MageAI',
+title: 'Ansible Deploy - PenTest, PwnDoc, ',
 excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
 cover: '/public/Screening.png',
-tags: ['Vue', 'Node.js', 'PostgreSQL'],
+tags: ['Ansible', 'PowerShell', 'WSL', 'PenTest', 'PwnDoc', 'MageAI'],
 body: `\
-Ricerca, iscrizione partite, profili, chat, e documentazione API.`,
-links: []
+`,
+links: [
+  { label: 'Repository', url: 'https://github.com/AlecRepos/Ansible_Deploy-Pentest-Pwndoc-Mage_AI' },
+  { label: 'PDF', url: '/public/docs/Project_Report_First.pdf', download: true }
+]
 },
 {
 slug: 'OpenVAS',
 title: 'OpenVas',
 excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
 cover: '/public/OpenVAS.png',
-tags: ['Vue', 'Node.js', 'PostgreSQL'],
+tags: ['Ansible', 'PowerShell', 'WSL', 'OpenVAS'],
 body: `\
-Ricerca, iscrizione partite, profili, chat, e documentazione API.`,
-links: []
+`,
+links: [
+  { label: 'Repository', url: 'https://github.com/AlecRepos/Ansible_Deploy-Pentest-Pwndoc-Mage_AI' },
+  { label: 'PDF', url: '/public/docs/Project_Report_Second.pdf', download: true }
+]
 },
 ]

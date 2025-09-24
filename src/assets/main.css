@@ -202,3 +202,114 @@ main.container { width: min(1100px, 92%); margin: 0 auto; padding: 28px 0 60px; 
     transition: none;
   }
 }
+
+/* GRID: card comode e max 4 per riga */
+.skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  max-width: calc(280px * 4 + 14px * 3);
+}
+
+/* Card Skills*/
+.card--skills {
+  position: relative;
+  padding: 18px;
+  gap: 14px;
+  border-radius: 16px;
+  border: 1px solid transparent; /* necessario per il layer border-box */
+  background:
+    linear-gradient(var(--card), var(--card)) padding-box,
+    linear-gradient(140deg, rgba(99,223,176,.6), rgba(158,210,255,.25)) border-box,
+    radial-gradient(24px 24px at 20% 10%, rgba(99,223,176,.05), transparent 60%),
+    radial-gradient(18px 18px at 80% 70%, rgba(158,210,255,.05), transparent 60%);
+}
+
+.card--skills:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.35), 0 0 0 1px rgba(99,223,176,.25) inset;
+  /* il border-radius resta coerente */
+}
+
+
+/* Effetto hover: glow tenue + translate */
+.card--skills:hover {
+  box-shadow: 0 10px 28px rgba(0,0,0,.35), 0 0 0 1px rgba(99,223,176,.25) inset;
+  transform: translateY(-3px);
+}
+
+/* Header con icona tonda */
+.skill-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--stroke);
+}
+
+.skill-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, var(--accent), var(--accent-2));
+  color: #0b0c0f;
+  font-size: 20px;
+  font-weight: 700;
+  filter: saturate(1.1) contrast(1.05);
+}
+
+.skill-titles h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.skill-sub { margin: 2px 0 0; font-size: 13px; }
+
+/* Badge list (al posto dei bullet) */
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Emoji semplice, senza cerchio */
+.skill-emoji {
+  font-size: 24px;
+  line-height: 1;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #202636;
+  background: #0c111c;
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1;
+  /* accento laterale sottile */
+  box-shadow: inset 2px 0 0 0 rgba(99,223,176,.6);
+  transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.badge:hover {
+  transform: translateY(-1px);
+  border-color: #2b3242;
+  box-shadow:
+    inset 2px 0 0 0 rgba(99,223,176,.85),
+    0 4px 14px rgba(0,0,0,.25);
+}
+
+/* Variante compatta su mobile */
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    max-width: 100%;
+  }
+  .skill-icon { width: 34px; height: 34px; font-size: 18px; }
+  .badge { font-size: 11px; padding: 6px 9px; }
+}
