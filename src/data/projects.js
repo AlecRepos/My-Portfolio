@@ -23,7 +23,7 @@ links: [
 slug: 'findmatch',
 title: 'Findmatch – Organizzatore sportivo',
 excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
-cover: '/public/CardCover/FindMatch.png',
+cover: '/CardCover/FindMatch.png',
 tags: ['Vue', 'Node.js', 'Vite', 'Bootstrap', 'JavaScript', 'PostgreSQL'],
 body: `\
 Negli ultimi anni, la pratica sportiva amatoriale ha assunto un ruolo sempre più centrale nella vita delle persone, non solo per mantenere uno stile di vita sano, ma anche come momento di socializzazione e svago. Tuttavia, uno dei problemi più comuni per chi desidera praticare sport di squadra o individuali è la difficoltà nel trovare compagni o avversari con cui organizzare partite in maniera semplice e veloce. Spesso, infatti, si rinuncia ad allenarsi o a giocare perché manca il numero minimo di partecipanti o non si conoscono persone disponibili nello stesso momento.
@@ -43,7 +43,7 @@ links: [
 slug: 'Cash Control',
 title: 'CashControl.it',
 excerpt: 'App per organizzare il proprio patrimonio - spese, entrate e risparmi. Attualmente in sviluppo',
-cover: '/public/CardCover/CashControl.png',
+cover: '/CardCover/CashControl.png',
 
 body: `\
 Ho deciso di iniziare a sviluppare questa applicazione, in primis, per una necessità personale. Mi sono ritrovato ad avere troppi fogli excel e note sparse in cui mi segnavo le spese e le uscite, un foglio excel in cui facevo il saldo, un foglio excel in cui controllavo i risparmi. Inoltre, non è ancora presente un'applicazione che possa gestire, in sicurezza, tutto questo.
@@ -64,7 +64,7 @@ links: [
 slug: 'Data Analysis',
 title: 'Data Analysis with ipynb & numpy',
 excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
-cover: '/public/CardCover/Data Analysis.png',
+cover: '/CardCover/Data Analysis.png',
 tags: ['Python', 'Pandas', 'numpy', 'matplotlib', 'seaborn'],
 body: `\
 Contenuto del progetto
@@ -85,7 +85,7 @@ links: [
 slug: 'MultiClass Classification',
 title: 'MultiClass Classification with ResNet50 & EfficientNet',
 excerpt: 'Classificazione multiclasse allenando modelli di intelligenza artificiale',
-cover: '/public/CardCover/Multi Class.png',
+cover: '/CardCover/Multi Class.png',
 tags: ['ResNet50', 'EfficientNet'],
 body: `\
 Il progetto è lo sviluppo di un’architettura di rete neurale volta a risolvere un problema di classificazione multi-classe. Ho utilizzato modelli pre-addestrati (ResNet50 e EfficientNet) e tecniche di preprocessing per migliorare le performance. Clicca "Report" per scaricare il PDF di spiegazione`,
@@ -99,7 +99,7 @@ links: [
 slug: 'Automated Laboratory',
 title: 'Automated Laboratory with Ansible & Vagrant + GPO',
 excerpt: 'Laboratorio automatizzato per creare e configurare VM Windows e Ubuntu Linux',
-cover: '/public/CardCover/Automated Laboratory.png',
+cover: '/CardCover/Automated Laboratory.png',
 tags: ['Vagrant', 'Ansible', 'BadBlood', 'GPO', 'Windows Defender', 'WSL', 'SSH'],
 body: `\
 Laboratorio automatizzato per creare e configurare VM Windows e Ubuntu Linux. L'obiettivo era rendere veloci e automatici processi che si svolgevano per fare dei test all'interno dell'azienda. Con questo laboratorio si crea un SetUp completo e funzionante. Sono compresi anche script per scaricare i pacchetti necessari`,
@@ -112,7 +112,7 @@ links: [
 slug: 'Ansible Deploy',
 title: 'Ansible Deploy - PenTest, PwnDoc, ',
 excerpt: 'Deploy automatizzato di PenTest, PwnDoc e MageAI con Ansible su WSL',
-cover: '/public/CardCover/Screening.png',
+cover: '/CardCover/Screening.png',
 tags: ['Ansible', 'PowerShell', 'WSL', 'PenTest', 'PwnDoc', 'MageAI'],
 body: `\
 `,
@@ -125,7 +125,7 @@ links: [
 slug: 'OpenVAS',
 title: 'OpenVas',
 excerpt: 'Deploy automatizzato di OpenVAS con divisione Agent e Central & extra',
-cover: '/public/CardCover/OpenVAS.png',
+cover: '/CardCover/OpenVAS.png',
 tags: ['Ansible', 'PowerShell', 'WSL', 'OpenVAS'],
 body: `\
 `,
