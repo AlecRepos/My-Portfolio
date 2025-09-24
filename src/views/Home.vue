@@ -58,7 +58,7 @@
                         <ul class="cv__sublist">
                           <li>Presso: Università di Bologna – Campus di Cesena</li>
                           <li>Corso di Laurea: Tecnologie dei Sistemi Informatici</li>
-                          <li>Voto: VVV/110L</li>
+                          <li>Expected Graduation: Nov. 2025</li>
                         </ul>
                       </li>
                       <li>

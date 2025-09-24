@@ -6,7 +6,7 @@ import Contact from './views/Contact.vue'
 
 
 export default [
-{ path: '/', component: Home, meta: { title: 'Home' } },
+{ path: '/', component: Home, meta: { title: 'Portfolio - Ale' } },
 { path: '/projects', component: Projects, meta: { title: 'Progetti' } },
 { path: '/projects/:slug', component: ProjectDetail, meta: { title: 'Progetto' } },
 { path: '/skills', component: Skills, meta: { title: 'Linguaggi' } },
