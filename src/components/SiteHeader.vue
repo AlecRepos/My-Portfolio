@@ -24,21 +24,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-      <!-- Menu -->
-      <div id="mainNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <RouterLink to="/" class="nav-link" @click="closeNav">Home</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink to="/projects" class="nav-link" @click="closeNav">Progetti</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink to="/skills" class="nav-link" @click="closeNav">Linguaggi</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink to="/contact" class="nav-link" @click="closeNav">Contatti</RouterLink>
-          </li>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#progetti" class="nav-link">Progetti</a>
+            </li>
+            <li class="nav-item">
+              <a href="#linguaggi" class="nav-link">Linguaggi</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contatti" class="nav-link">Contatti</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -59,40 +56,3 @@ onMounted(() => {
   })
 })
 </script>
-
-
-<style>
-/* Mantiene la navbar sempre visibile */
-.navbar-custom {
-  background-color: var(--bg); /* puoi usare la tua variabile di tema */
-}
-.navbar .nav-link {
-  position: relative;
-  transition: color 0.25s ease;
-}
-
-.navbar .nav-link.active {
-  color: var(--accent) !important;
-}
-
-/* Pallino sotto il link attivo (desktop già ok) */
-.navbar .nav-link.active::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -6px;
-  transform: translateX(-50%);
-  width: 6px;
-  height: 6px;
-  background-color: var(--accent);
-  border-radius: 50%;
-}
-
-/* 🔒 Nascondi il pallino su mobile (< lg) */
-@media (max-width: 991.98px) {
-  .navbar .nav-link.active::after {
-    content: none; /* oppure display: none; */
-  }
-}
-
-</style>
