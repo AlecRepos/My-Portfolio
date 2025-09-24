@@ -12,7 +12,7 @@
         <!-- Card con intro + blocco Micro-curriculum -->
         <div class="hero">
           <p class="hero__lede muted">
-            Laureato in Informatica. Mi piace costruire prodotti semplici, puliti e affidabili.
+            Laureando in Informatica. Mi piace costruire prodotti semplici, puliti e affidabili.
             In questo portfolio trovi una breve descrizione di me, i miei progetti principali,
             i linguaggi che conosco e come contattarmi.
           </p>
