@@ -63,7 +63,7 @@ links: [
 {
 slug: 'Data Analysis',
 title: 'Data Analysis with ipynb & numpy',
-excerpt: 'Web app per organizzare partite amatoriali (Vue + Node + Postgres).',
+excerpt: 'Notebook di analizzo dati - Python, Pandas, numpy, matplotlib, seaborn',
 cover: '/CardCover/Data Analysis.png',
 tags: ['Python', 'Pandas', 'numpy', 'matplotlib', 'seaborn'],
 body: `\
