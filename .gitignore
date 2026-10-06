@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# File generati da Claude (screenshot di anteprima)
+Claude outputs/

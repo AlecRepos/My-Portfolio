@@ -16,7 +16,8 @@
           </button>
 
           <div class="modal__media">
-            <img :src="project.cover" alt="" />
+            <img class="modal__media-bg" :src="project.cover" alt="" aria-hidden="true" />
+            <img class="modal__media-img" :src="project.cover" :alt="project.title" />
           </div>
 
           <div class="modal__content">
@@ -181,12 +182,34 @@ function trapFocus(e) {
 }
 
 .modal__media {
-  aspect-ratio: 16 / 7;
-  background: var(--beige-100);
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 3vw, 28px);
+  background: var(--brown-900);
   overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
-.modal__media img { width: 100%; height: 100%; object-fit: cover; }
+.modal__media-bg {
+  position: absolute;
+  inset: -40px;
+  width: calc(100% + 80px);
+  height: calc(100% + 80px);
+  object-fit: cover;
+  filter: blur(28px) saturate(1.1);
+  opacity: 0.55;
+  transform: scale(1.1);
+}
+.modal__media-img {
+  position: relative;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(52vh, 460px);
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.6);
+}
 
 .modal__content { padding: clamp(22px, 4vw, 40px); }
 .modal__cat {
@@ -266,7 +289,8 @@ function trapFocus(e) {
   .modal { padding: 0; place-items: end stretch; }
   .modal__dialog { max-height: 92dvh; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
   .modal__grid { grid-template-columns: 1fr; gap: 24px; }
-  .modal__media { aspect-ratio: 16 / 9; }
+  .modal__media { padding: 14px; }
+  .modal__media-img { max-height: 38vh; border-radius: var(--radius-sm); }
   .modal-enter-from .modal__dialog,
   .modal-leave-to .modal__dialog { transform: translateY(40px); }
 }
