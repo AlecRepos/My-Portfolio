@@ -6,13 +6,107 @@
 // ─────────────────────────────────────────────────────────────
 
 export const categories = [
-  { id: 'security', label: { it: 'Cybersecurity', en: 'Cybersecurity' } },
   { id: 'web', label: { it: 'Web', en: 'Web' } },
+  { id: 'security', label: { it: 'Cybersecurity', en: 'Cybersecurity' } },
   { id: 'data', label: { it: 'Data & AI', en: 'Data & AI' } },
   { id: 'software', label: { it: 'Software', en: 'Software' } },
 ]
 
 export const projects = [
+  {
+    slug: 'soave',
+    category: 'web',
+    wip: true,
+    title: 'SOAVE',
+    excerpt: {
+      it: 'Sito ufficiale di SOAVE, collettivo che organizza club night e DJ set in location sempre diverse.',
+      en: 'Official website for SOAVE, a collective running club nights and DJ sets in ever-changing venues.',
+    },
+    cover: '/covers/soave.webp',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Cloudflare Pages', 'Google Sign-In'],
+    body: {
+      it: 'Un sito su misura per raccontare il progetto SOAVE e accompagnare il pubblico da una serata all’altra: prossimo evento sempre in primo piano, archivio dei “volumi” passati e foto da scaricare. Design scuro costruito attorno al blu del logo, pensato prima di tutto per lo smartphone.',
+      en: 'A custom website that tells the SOAVE story and keeps the audience engaged from one night to the next: the next event always up front, an archive of past “volumes” and downloadable photos. A dark design built around the logo’s blue, designed mobile-first.',
+    },
+    highlights: {
+      it: [
+        'Biglietto del prossimo evento con countdown e lista d’ingresso',
+        'Archivio eventi e gallerie fotografiche in alta risoluzione',
+        'Sezioni merch e community',
+        '“Ruota del mese” con accesso Google e premi per l’evento successivo',
+      ],
+      en: [
+        'Next-event ticket with countdown and guest list',
+        'Event archive and high-resolution photo galleries',
+        'Merch and community sections',
+        '“Wheel of the month” with Google sign-in and prizes for the next event',
+      ],
+    },
+    links: [
+      { type: 'live', url: 'https://soave.pages.dev/' },
+    ],
+  },
+  {
+    slug: 'cashcontrol',
+    category: 'web',
+    wip: true,
+    title: 'CashControl',
+    excerpt: {
+      it: 'App per gestire il proprio patrimonio: spese, entrate, risparmi e investimenti.',
+      en: 'App to manage personal finances: expenses, income, savings and investments.',
+    },
+    cover: '/covers/cashcontrol.webp',
+    tags: ['Web app', 'API'],
+    body: {
+      it: 'Nata da un’esigenza personale: troppi fogli Excel e note sparse per tenere traccia di spese, saldo e risparmi. L’obiettivo è un’app semplice, sicura e personalizzabile, adatta a chiunque.',
+      en: 'Born from a personal need: too many spreadsheets and scattered notes to track expenses, balance and savings. The goal is a simple, secure and customisable app that works for anyone.',
+    },
+    highlights: {
+      it: [
+        'Registrazione di entrate e uscite',
+        'Risparmi suddivisi in macro-aree personalizzabili',
+        'Investimenti con andamento di mercato via API',
+      ],
+      en: [
+        'Track income and expenses',
+        'Savings split into customisable categories',
+        'Investments with live market data via API',
+      ],
+    },
+    links: [
+      { type: 'repo', url: 'https://github.com/AlecRepos/CashControl.it' },
+    ],
+  },
+  {
+    slug: 'findmatch',
+    category: 'web',
+    title: 'FindMatch',
+    excerpt: {
+      it: 'Web app per organizzare partite sportive amatoriali e trovare compagni di gioco.',
+      en: 'Web app to organise amateur sports matches and find people to play with.',
+    },
+    cover: '/covers/findmatch.webp',
+    tags: ['Vue', 'Node.js', 'PostgreSQL', 'Vite', 'Bootstrap', 'JavaScript'],
+    body: {
+      it: 'Spesso si rinuncia a giocare perché manca il numero minimo di partecipanti. FindMatch permette di creare e trovare partite in modo immediato, facilitando l’incontro tra persone con la stessa passione sportiva.',
+      en: 'People often skip a game because there aren’t enough players. FindMatch makes it quick to create and find matches, bringing together people who share the same sport.',
+    },
+    highlights: {
+      it: [
+        'Creazione di partite: sport, luogo, data, orario e numero di giocatori',
+        '8 sport supportati, dal calcio a 5 al padel',
+        'Ricerca partite e scelta del ruolo (es. calcio)',
+      ],
+      en: [
+        'Create matches: sport, place, date, time and number of players',
+        '8 supported sports, from 5-a-side football to padel',
+        'Search matches and pick your role (e.g. football)',
+      ],
+    },
+    links: [
+      { type: 'repo', url: 'https://github.com/AlecRepos/Findmatch-Project' },
+    ],
+  },
   {
     slug: 'automated-lab',
     category: 'security',
@@ -100,67 +194,6 @@ export const projects = [
     },
     links: [
       { type: 'repo', url: 'https://github.com/AlecRepos/Ansible_Deploy-Pentest-Pwndoc-Mage_AI' },
-    ],
-  },
-  {
-    slug: 'findmatch',
-    category: 'web',
-    title: 'FindMatch',
-    excerpt: {
-      it: 'Web app per organizzare partite sportive amatoriali e trovare compagni di gioco.',
-      en: 'Web app to organise amateur sports matches and find people to play with.',
-    },
-    cover: '/covers/findmatch.webp',
-    tags: ['Vue', 'Node.js', 'PostgreSQL', 'Vite', 'Bootstrap', 'JavaScript'],
-    body: {
-      it: 'Spesso si rinuncia a giocare perché manca il numero minimo di partecipanti. FindMatch permette di creare e trovare partite in modo immediato, facilitando l’incontro tra persone con la stessa passione sportiva.',
-      en: 'People often skip a game because there aren’t enough players. FindMatch makes it quick to create and find matches, bringing together people who share the same sport.',
-    },
-    highlights: {
-      it: [
-        'Creazione di partite: sport, luogo, data, orario e numero di giocatori',
-        '8 sport supportati, dal calcio a 5 al padel',
-        'Ricerca partite e scelta del ruolo (es. calcio)',
-      ],
-      en: [
-        'Create matches: sport, place, date, time and number of players',
-        '8 supported sports, from 5-a-side football to padel',
-        'Search matches and pick your role (e.g. football)',
-      ],
-    },
-    links: [
-      { type: 'repo', url: 'https://github.com/AlecRepos/Findmatch-Project' },
-    ],
-  },
-  {
-    slug: 'cashcontrol',
-    category: 'web',
-    wip: true,
-    title: 'CashControl',
-    excerpt: {
-      it: 'App per gestire il proprio patrimonio: spese, entrate, risparmi e investimenti.',
-      en: 'App to manage personal finances: expenses, income, savings and investments.',
-    },
-    cover: '/covers/cashcontrol.webp',
-    tags: ['Web app', 'API'],
-    body: {
-      it: 'Nata da un’esigenza personale: troppi fogli Excel e note sparse per tenere traccia di spese, saldo e risparmi. L’obiettivo è un’app semplice, sicura e personalizzabile, adatta a chiunque.',
-      en: 'Born from a personal need: too many spreadsheets and scattered notes to track expenses, balance and savings. The goal is a simple, secure and customisable app that works for anyone.',
-    },
-    highlights: {
-      it: [
-        'Registrazione di entrate e uscite',
-        'Risparmi suddivisi in macro-aree personalizzabili',
-        'Investimenti con andamento di mercato via API',
-      ],
-      en: [
-        'Track income and expenses',
-        'Savings split into customisable categories',
-        'Investments with live market data via API',
-      ],
-    },
-    links: [
-      { type: 'repo', url: 'https://github.com/AlecRepos/CashControl.it' },
     ],
   },
   {

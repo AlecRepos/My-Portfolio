@@ -53,7 +53,7 @@
                     target="_blank"
                     rel="noopener"
                     class="btn btn--sm"
-                    :class="l.type === 'repo' ? 'btn--primary' : 'btn--ghost'"
+                    :class="l === project.links[0] ? 'btn--primary' : 'btn--ghost'"
                   >
                     <AppIcon :name="linkIcon(l.type)" :size="16" />
                     {{ linkLabel(l) }}
@@ -118,14 +118,14 @@ function close() {
 }
 
 function linkIcon(type) {
-  return { repo: 'github', pdf: 'file', live: 'external' }[type] || 'external'
+  return { repo: 'github', pdf: 'file', live: 'globe' }[type] || 'external'
 }
 function linkLabel(l) {
   if (l.label) return tr(l.label)
   const labels = {
     repo: { it: 'Repository', en: 'Repository' },
     pdf: { it: 'Report PDF', en: 'PDF report' },
-    live: { it: 'Demo live', en: 'Live demo' },
+    live: { it: 'Visita il sito', en: 'Visit website' },
   }
   return labels[l.type]?.[lang.value] || 'Link'
 }

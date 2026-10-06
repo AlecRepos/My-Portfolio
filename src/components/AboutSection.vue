@@ -12,13 +12,17 @@
         <div class="col" v-reveal>
           <h3 class="col__title"><AppIcon name="briefcase" /> {{ t('about.experience') }}</h3>
 
-          <article v-for="job in profile.experience" :key="job.org" class="card job">
+          <div class="jobs">
+          <article v-for="job in profile.experience" :key="job.org" class="card job" :class="{ 'job--past': !job.current }">
             <header class="job__head">
               <div>
                 <h4 class="job__role">{{ tr(job.role) }}</h4>
-                <p class="job__org">{{ job.org }} <span aria-hidden="true">·</span> {{ job.place }}</p>
+                <p class="job__org">{{ job.org }} <span aria-hidden="true">·</span> {{ tr(job.place) }}</p>
               </div>
-              <span class="period">{{ tr(job.period) }}</span>
+              <span class="period" :class="{ 'period--current': job.current }">
+                <span v-if="job.current" class="period__dot" aria-hidden="true"></span>
+                {{ tr(job.period) }}
+              </span>
             </header>
 
             <ul class="job__items">
@@ -31,6 +35,7 @@
               </li>
             </ul>
           </article>
+          </div>
         </div>
 
         <!-- Formazione -->
@@ -108,7 +113,16 @@ const { t, tr } = useI18n()
 }
 
 /* Job */
+.jobs { display: grid; gap: 16px; }
 .job { padding: clamp(20px, 3vw, 28px); }
+.period--current { gap: 8px; background: var(--brown-900); color: var(--cream); }
+.period__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--orange-500);
+  box-shadow: 0 0 0 3px rgba(232, 101, 15, 0.3);
+}
 .job__head {
   display: flex;
   justify-content: space-between;

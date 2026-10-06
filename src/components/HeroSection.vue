@@ -16,8 +16,8 @@
 
         <p class="hero__role">{{ tr(profile.role) }}</p>
 
-        <p class="hero__headline">{{ tr(profile.headline) }}</p>
-        <p class="hero__intro">{{ tr(profile.intro) }}</p>
+        <p v-if="profile.headline" class="hero__headline">{{ tr(profile.headline) }}</p>
+        <p class="hero__intro" :class="{ 'hero__intro--lede': !profile.headline }">{{ tr(profile.intro) }}</p>
 
         <div class="hero__ctas">
           <a href="#projects" class="btn btn--primary">
@@ -160,6 +160,13 @@ const greeting = computed(() => (lang.value === 'it' ? 'Ciao, sono' : 'Hi, I’m
   margin-top: 14px;
   max-width: 58ch;
   color: var(--text-muted);
+}
+.hero__intro--lede {
+  margin-top: 24px;
+  max-width: 54ch;
+  font-size: clamp(17px, 1.5vw, 19px);
+  line-height: 1.65;
+  color: var(--brown-800);
 }
 
 .hero__ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }

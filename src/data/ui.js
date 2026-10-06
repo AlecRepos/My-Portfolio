@@ -18,8 +18,8 @@ export const ui = {
     eyebrow: { it: '01 — Percorso', en: '01 — Journey' },
     title: { it: 'Esperienza e formazione', en: 'Experience & education' },
     lede: {
-      it: 'Dove ho lavorato, cosa ho studiato e gli strumenti che ho usato sul campo.',
-      en: 'Where I have worked, what I studied and the tools I used on the job.',
+      it: 'Dove lavoro, dove ho lavorato e cosa ho studiato.',
+      en: 'Where I work, where I have worked and what I studied.',
     },
     experience: { it: 'Esperienza', en: 'Experience' },
     education: { it: 'Formazione', en: 'Education' },
@@ -29,8 +29,8 @@ export const ui = {
     eyebrow: { it: '02 — Progetti', en: '02 — Projects' },
     title: { it: 'Progetti selezionati', en: 'Selected work' },
     lede: {
-      it: 'Dall’automazione di laboratori di sicurezza alle web app. Clicca su un progetto per i dettagli.',
-      en: 'From automated security labs to web apps. Click a project to see the details.',
+      it: 'Siti e web app, laboratori automatizzati e progetti di data science. Clicca su un progetto per i dettagli.',
+      en: 'Websites and web apps, automated labs and data science projects. Click a project to see the details.',
     },
     all: { it: 'Tutti', en: 'All' },
     details: { it: 'Dettagli', en: 'Details' },
@@ -43,16 +43,16 @@ export const ui = {
     eyebrow: { it: '03 — Competenze', en: '03 — Skills' },
     title: { it: 'Strumenti e tecnologie', en: 'Tools & technologies' },
     lede: {
-      it: 'Le tecnologie che uso nel lavoro, nello studio e nei progetti personali.',
-      en: 'The technologies I use at work, in my studies and in personal projects.',
+      it: 'Gli strumenti che uso ogni giorno al lavoro, insieme a quelli dei miei progetti e degli studi.',
+      en: 'The tools I use every day at work, alongside those from my projects and studies.',
     },
   },
   contact: {
     eyebrow: { it: '04 — Contatti', en: '04 — Contact' },
     title: { it: 'Lavoriamo insieme', en: 'Let’s work together' },
     lede: {
-      it: 'Sono aperto a opportunità e collaborazioni in ambito cybersecurity, automazione e sviluppo. Scrivimi: rispondo entro un paio di giorni.',
-      en: 'I am open to opportunities and collaborations in cybersecurity, automation and development. Drop me a line — I usually reply within a couple of days.',
+      it: 'Hai un progetto web, una collaborazione o una domanda su IT e tecnologia? Scrivimi: rispondo entro un paio di giorni.',
+      en: 'Got a web project, a collaboration or a question about IT and tech? Drop me a line — I usually reply within a couple of days.',
     },
     direct: { it: 'Contatti diretti', en: 'Direct contacts' },
     copy: { it: 'Copia', en: 'Copy' },
