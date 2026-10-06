@@ -1,6 +1,6 @@
 # Portfolio — Alessandro Cacchi
 
-Portfolio personale bilingue (IT/EN) realizzato con **Vue 3 + Vite**, deployato su **Vercel**.
+Portfolio personale bilingue (IT/EN) realizzato con **Vue 3 + Vite**, pubblicato su **Cloudflare Pages**.
 
 ## Sviluppo
 
@@ -42,5 +42,7 @@ src/
 ## Note
 
 - I font sono self-hosted tramite `@fontsource` (nessuna richiesta a Google Fonts, GDPR-friendly).
-- `vercel.json` reindirizza le rotte a `index.html`, così i link `/projects/<slug>` funzionano anche se aperti direttamente.
+- Deploy: Cloudflare Pages collegato al repo GitHub. Ogni push su `master` pubblica il sito; gli altri branch generano un'anteprima.
+  Impostazioni: build `npm run build`, output `dist`, Node 22 (da `.nvmrc`).
+- Pages serve `index.html` per le rotte sconosciute (non c'è un `404.html`), così i link `/projects/<slug>` funzionano anche se aperti direttamente.
 - Il form contatti usa Formspree (endpoint in `src/components/ContactSection.vue`).
