@@ -22,7 +22,7 @@ export const profile = {
   // Frase grande sotto il nome (opzionale: metti null per non mostrarla)
   headline: null,
   intro: {
-    it: 'Laureato in Informatica all’Università di Bologna, oggi lavoro come IT Specialist in Onit Sistemi: mi occupo di ambienti Microsoft, reti, sicurezza degli utenti e assistenza tecnica. In parallelo sviluppo siti e web app, e uso gli strumenti di intelligenza artificiale ogni giorno per lavorare in modo più rapido e preciso.',
+    it: 'Laureato in Informatica all’Università di Bologna, oggi lavoro come IT Specialist: mi occupo di ambienti Microsoft, reti, sicurezza degli utenti e assistenza tecnica. In parallelo sviluppo siti e web app, e uso gli strumenti di intelligenza artificiale ogni giorno per lavorare in modo più rapido e preciso.',
     en: 'Computer Science graduate from the University of Bologna, now working as an IT Specialist at Onit Sistemi: I look after Microsoft environments, networks, end-user security and technical support. On the side I build websites and web apps, and I use AI tools every day to work faster and more accurately.',
   },
 
